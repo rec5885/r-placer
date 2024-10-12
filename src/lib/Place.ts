@@ -122,7 +122,7 @@ export class Place {
       const x = Math.floor(p.x / this.ONE_PIXEL) + this.X_TOP_LEFT;
       const y = Math.floor((p.y - this.Y_OFFSET) / this.ONE_PIXEL) + this.Y_TOP_LEFT;
       if (x >= this.start_x && y >= this.start_y && x < img.width + this.start_x && y < img.height + this.start_y) {
-        const url = 'https://new.reddit.com/r/place/?cx=' + x + '&cy=' + y + '&px=15&screenmode=fullscreen';
+        const url = 'https://place.yildizskylab.com/?x=' + x + '&cy=' + y + '&px=15&screenmode=fullscreen';
         window.open(url, '_blank');
       }
     });
